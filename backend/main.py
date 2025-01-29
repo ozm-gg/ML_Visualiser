@@ -10,10 +10,9 @@ class TextInput(BaseModel):
 # Инициализация FastAPI
 app = FastAPI()
 
-# Добавляем CORS middleware для разрешения запросов от Streamlit
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # В продакшене заменить на конкретный URL
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

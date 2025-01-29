@@ -6,7 +6,7 @@ from typing import Dict
 import os
 
 # Конфигурация API
-API_URL = os.getenv("API_URL", "http://:8000")
+API_URL = os.getenv("API_URL", "https://ml-visualiser.onrender.com")
 
 # Функция для взаимодействия с API
 def analyze_text(text: str) -> Dict:
